@@ -1,0 +1,24 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    innate (2013.02.21)
+      rack (~> 1.5.2)
+    mime-types (1.23)
+    multi_json (1.7.3)
+    rack (1.5.2)
+    rake (10.0.4)
+    ramaze (2012.12.08)
+      innate (>= 2012.12)
+      rake
+    rest-client (1.6.7)
+      mime-types (>= 1.16)
+    stripe (1.8.3)
+      multi_json (>= 1.0.4, < 2)
+      rest-client (~> 1.4)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  ramaze
+  stripe

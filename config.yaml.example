@@ -1,0 +1,5 @@
+# Assuming you have a Stripe account, you can get your keys from
+# https://manage.stripe.com/account/apikeys
+stripe:
+  secret_key: your_stripe_secret_key
+  publishable_key: your_stripe_publishable_key

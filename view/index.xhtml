@@ -1,0 +1,22 @@
+<h2>Stripe with Ramaze</h2>
+
+<div class="error">
+#{flash[:error]}
+</div>
+
+<p>
+During testing, you can use this credit card number: 4242424242424242
+</p>
+
+<form action="/charge" method="post" class="payment">
+  <article>
+    <label class="amount">
+      <span>Amount: #{@amount_str}</span>
+    </label>
+  </article>
+
+  <script
+    src="https://checkout.stripe.com/v2/checkout.js"
+    class="stripe-button"
+    data-key="#{$config['stripe']['publishable_key']}"></script>
+</form>
